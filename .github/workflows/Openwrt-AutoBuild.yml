@@ -3,15 +3,15 @@ name: Openwrt-AutoBuild
 on:
 #  release:
 #    types: [published]
-  push:
-    branches:
-      - main
-    paths:
-      - 'start'
-  schedule:
-    - cron: 0 20 * * *
+#  push:
+#    branches:
+#      - main
+#    paths:
+#      - 'start'
+#  schedule:
+#    - cron: 0 20 * * *
   watch:
-    types: [started]
+    types: started
 
 env:
   RUN_VALIDATION: true
